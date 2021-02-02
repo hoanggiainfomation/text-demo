@@ -1,0 +1,36 @@
+.main-container {
+  display: grid;
+  width: 100%;
+  position: relative;
+
+  grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
+
+  .nav {
+    grid-column: col-start 1 / col-end -1;
+  }
+
+  .hero {
+    grid-column: col-start 1 / col-end -1;
+  }
+
+  .services {
+    grid-column: col-start 1 / col-end -1;
+  }
+
+  .projects {
+    grid-column: col-start 1 / col-end -1;
+  }
+
+  .team {
+    grid-column: col-start 1 / col-end -1;
+  }
+
+  .testimonial {
+    grid-column: col-start 1 / col-end -1;
+  }
+
+  .footer {
+    background-color: #100e1d;
+    grid-column: col-start 1 / col-end -1;
+  }
+}

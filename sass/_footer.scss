@@ -1,0 +1,132 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $bp-smallest) {
+    justify-content: flex-start;
+  }
+
+  &__items {
+    display: flex;
+    width: 15rem;
+    flex-direction: column;
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 30rem;
+      margin-bottom: 2rem;
+    }
+
+    margin: 5rem 3rem 10rem 3rem;
+
+    .item {
+      padding: 0.5rem;
+      &__link {
+        color: $color-white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .logos {
+    margin: 5rem 3rem 10rem 3rem;
+    width: 15rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 30rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-brand {
+      font-family: $font-display-secondary;
+      font-weight: 800;
+      font-size: 3.6rem;
+      color: $color-white;
+      margin-bottom: 1rem;
+    }
+
+    .logo {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-blue;
+        background-clip: content-box;
+      }
+    }
+  }
+
+  .contact {
+    margin: 5rem 3rem 10rem 3rem;
+    width: 35rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 2rem;
+    }
+
+    &__heading {
+      margin-left: auto;
+      margin-bottom: 1rem;
+      color: $color-white;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    .form {
+      display: flex;
+      align-items: center;
+
+      .input {
+        height: 5rem;
+        width: 25rem;
+        padding: 0 2rem;
+        color: $color-font-grey-1;
+        font-size: 1.8rem;
+        outline: none;
+        border: none;
+        background-color: $color-font-grey-4;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 2px rgb(168, 168, 168);
+
+        &::placeholder {
+          font-family: $font-display-primary;
+          color: $color-font-grey-5;
+          font-size: 1.8rem;
+        }
+
+        &:focus {
+          border: 1px solid $color-font-grey-1;
+        }
+      }
+
+      .btn {
+        width: 9rem;
+        height: 4.8rem;
+        border-radius: 1rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        cursor: pointer;
+        color: $color-white;
+        background-color: $color-blue;
+        outline: none;
+        box-shadow: 2px 2px 2px rgb(120, 120, 120);
+        border: none;
+        transform: translate(-10px, -1px);
+        transition: all 0.1s ease-out;
+
+        &:hover {
+          transform: translate(-10px, -2px);
+        }
+
+        &:active {
+          transform: translate(-10px, 0);
+        }
+      }
+    }
+  }
+}

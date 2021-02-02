@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <title>Eddie Homepage</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2 class="brand">Edie</h2>
+      <nav class="nav mg-bottom-medium">
+        <ul class="nav__items">
+          <li class="item">
+            <a href="#" class="item__link">Home</a>
+          </li>
+          <li class="item">
+            <a href="#services" class="item__link">Services</a>
+          </li>
+          <li class="item">
+            <a href="#works" class="item__link">Our Works</a>
+          </li>
+          <li class="item">
+            <a href="#clients" class="item__link">Clients</a>
+          </li>
+          <li class="item">
+            <a href="#contact" class="item__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="menu">
+          <div class="menu__item menu__item--top"></div>
+          <div class="menu__item menu__item--middle"></div>
+          <div class="menu__item menu__item--bottom"></div>
+        </div>
+      </nav>
+
+      <section class="hero mg-bottom-small">
+        <h4 class="hero__title">Unhappy with your website?</h4>
+        <div>
+          <h1 class="hero__heading mg-bottom-medium">
+            We create beautiful and fast web services
+          </h1>
+          <img
+            src="img/heroImage.jpg"
+            alt="Hero Image"
+            class="hero__img mg-bottom-medium"
+          />
+          <h1 class="hero__heading hero__heading--bottom mg-bottom-medium">
+            Story, emotion and purpose
+          </h1>
+          <p class="hero__text mg-bottom-medium">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+        </div>
+        <div class="contact mg-bottom-large">
+          <h5 class="contact__heading">Want us to contact you?</h5>
+          <form class="form">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="input"
+            />
+            <button class="btn">Join</button>
+          </form>
+        </div>
+      </section>
+      <section id="services" class="services mg-bottom-large">
+        <h2 class="services__heading">We offer high demand services</h2>
+        <div class="card-list">
+          <div class="card">
+            <i class="material-icons card__icon card__icon--1">create</i>
+            <h3 class="card__title">UI/UX Design</h3>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              quasi ipsum in et at, omnis assumenda .
+            </p>
+            <button class="btn--card">Get started</button>
+          </div>
+
+          <div class="card">
+            <i class="material-icons card__icon card__icon--2">code</i>
+            <h3 class="card__title">Front End</h3>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              quasi ipsum in et at, omnis assumendam.
+            </p>
+            <button class="btn--card">Get started</button>
+          </div>
+
+          <div class="card">
+            <i class="material-icons card__icon card__icon--3">layers</i>
+            <h3 class="card__title">Back End</h3>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              quasi ipsum in et at, omnis assumendam.
+            </p>
+            <button class="btn--card">Get started</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="projects mg-bottom-large">
+        <h2 class="projects__heading">Good design means good business</h2>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="img/smarthome.jpg"
+              alt="smarthome picture"
+              class="gallery__img"
+            />
+            <h3 class="item-heading">Full stack application</h3>
+            <h2 class="item-title">Smart home dashboard</h2>
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="img/onboard.png"
+              alt="onboard picture"
+              class="gallery__img"
+            />
+            <h3 class="item-heading">UX/UI design</h3>
+            <h2 class="item-title">Onboard application</h2>
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="img/booking.png"
+              alt="booking picture"
+              class="gallery__img"
+            />
+            <h3 class="item-heading">Mobile application</h3>
+            <h2 class="item-title">Booking system</h2>
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="img/juice-product.png"
+              alt="juicy product picture"
+              class="gallery__img"
+            />
+            <h3 class="item-heading">Front End application</h3>
+            <h2 class="item-title">Juice product homepage</h2>
+          </figure>
+        </div>
+        <a class="more" href="#">See more &rarr;</a>
+      </section>
+
+      <section id="clients" class="team mg-bottom-large">
+        <div class="info">
+          <h3 class="info__title">Meet the team</h3>
+          <h2 class="info__heading">We are chilled and a laidback team</h2>
+          <p class="info__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="image-box">
+          <figure class="item item--1">
+            <img src="img/person1.png" alt="Person 1" class="img--1" />
+          </figure>
+          <figure class="item item--2">
+            <img src="img/person2.png" alt="Person 2" class="img--2" />
+          </figure>
+          <figure class="item item--3">
+            <img src="img/person3.png" alt="Person 3" class="img--3" />
+          </figure>
+        </div>
+      </section>
+      <section class="testimonial mg-bottom-large">
+        <p class="testimonial__text">
+          “Fast and outstanding resutls. Edie understands their customer’s
+          needs. They have a young and talented team.”
+        </p>
+        <div class="review-card">
+          <img src="img/person4.png" alt="Person 4" class="review-card__img" />
+          <div class="content">
+            <h3 class="content__title">Carlos Tran</h3>
+            <p class="content__text">The Decorate Gatsby</p>
+          </div>
+        </div>
+      </section>
+
+      <footer id="contact" class="footer">
+        <ul class="footer__items">
+          <li class="item">
+            <a href="#" class="item__link">Home</a>
+          </li>
+          <li class="item">
+            <a href="#services" class="item__link">Services</a>
+          </li>
+          <li class="item">
+            <a href="#works" class="item__link">Our Works</a>
+          </li>
+          <li class="item">
+            <a href="#clients" class="item__link">Clients</a>
+          </li>
+          <li class="item">
+            <a href="#contact" class="item__link">Contact</a>
+          </li>
+        </ul>
+        <div class="logos">
+          <h2 class="footer-brand">Edie</h2>
+          <img src="img/instagram.svg" class="logo" />
+          <img src="img/linkedin.svg" class="logo" />
+          <img src="img/twitter.svg" class="logo" />
+        </div>
+
+        <div class="contact">
+          <h5 class="contact__heading">Want us to contact you?</h5>
+          <form class="form">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="input"
+            />
+            <button class="btn">Join</button>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

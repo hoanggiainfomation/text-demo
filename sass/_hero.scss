@@ -1,0 +1,151 @@
+.hero {
+  overflow: hidden;
+
+  &__title {
+    color: $color-blue;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 27rem;
+    padding-bottom: 1.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &__heading {
+    margin-left: 27rem;
+    width: 54rem;
+    color: $color-font-grey-1;
+    font-size: 4.8rem;
+    font-weight: 500;
+
+    &--bottom {
+      width: 36rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        margin-left: 2rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 4rem;
+      width: 90%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 4rem;
+    border-radius: 6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        padding: 0 2rem;
+        border-radius: 2.5rem;
+      }
+    }
+  }
+
+  &__text {
+    color: $color-font-grey-2;
+    margin-left: 27rem;
+    font-size: 1.8rem;
+    width: 36rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .contact {
+    &__heading {
+      margin-left: 27rem;
+      margin-bottom: 1rem;
+      color: $color-font-grey-3;
+      font-size: 1.4rem;
+      font-weight: 500;
+
+      @media only screen and (max-width: $bp-medium) {
+        & {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        align-items: start;
+      }
+    }
+
+    .input {
+      margin-left: 27rem;
+      height: 5rem;
+      width: 25rem;
+      padding: 0 2rem;
+      color: $color-font-grey-1;
+      font-size: 1.8rem;
+      outline: none;
+      border: none;
+      background-color: $color-font-grey-4;
+      border-radius: 1rem;
+      box-shadow: 1px 1px 2px rgb(168, 168, 168);
+
+      @media only screen and (max-width: $bp-medium) {
+        & {
+          margin-left: 2rem;
+        }
+      }
+
+      &::placeholder {
+        font-family: $font-display-primary;
+        color: $color-font-grey-5;
+        font-size: 1.8rem;
+      }
+
+      &:focus {
+        border: 1px solid $color-font-grey-1;
+      }
+    }
+
+    .btn {
+      width: 9rem;
+      height: 4.8rem;
+      border-radius: 1rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: $color-white;
+      background-color: $color-blue;
+      outline: none;
+      box-shadow: 2px 2px 2px rgb(120, 120, 120);
+      border: none;
+      transform: translate(-10px, -1px);
+      transition: all 0.1s ease-out;
+      position: relative;
+      z-index: 0;
+
+      &:hover {
+        transform: translate(-10px, -2px);
+      }
+
+      &:active {
+        transform: translate(-10px, 0);
+      }
+    }
+  }
+}

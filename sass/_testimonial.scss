@@ -1,0 +1,52 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    margin-left: 12rem;
+    width: 55%;
+    font-size: 3.6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto;
+    }
+  }
+
+  .review-card {
+    margin: 3rem 0 2rem 12rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    &__img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+
+    .content {
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      &__title {
+        font-size: 2.4rem;
+        font-weight: 500;
+      }
+
+      &__text {
+        font-size: 1.8rem;
+        color: $color-font-grey-3;
+      }
+    }
+  }
+}

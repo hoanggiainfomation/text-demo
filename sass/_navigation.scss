@@ -1,0 +1,121 @@
+.brand {
+  font-family: $font-display-secondary;
+  font-weight: 800;
+  font-size: 3.6rem;
+  padding: 2rem;
+  position: absolute;
+  top: 2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10rem;
+
+  .menu {
+    display: none;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 30px;
+      right: 20px;
+      z-index: 99;
+
+      &__item {
+        width: 28px;
+        height: 4px;
+        background-color: $color-font-grey-1;
+        margin-bottom: 4px;
+        transition: all 0.7s ease-out;
+
+        &--top {
+          width: 14px;
+        }
+
+        &--bottom {
+          width: 14px;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    padding: 2rem;
+  }
+
+  &__items {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+    .item {
+      padding: 2.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        & {
+          padding: 1.5rem;
+        }
+      }
+
+      &__link:link,
+      &__link:visited {
+        color: $color-font-grey-1;
+        font-size: 2.4rem;
+        text-decoration: none;
+      }
+
+      &__link:hover {
+        background-color: $color-font-grey-4;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    .res-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .res-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      list-style: none;
+      background-color: #eee;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 99;
+      flex-direction: column;
+      padding-bottom: 3rem;
+
+      &:first-child {
+        padding-top: 8rem;
+      }
+
+      &__link:link,
+      &__link:visited {
+        color: $color-font-grey-1;
+        font-size: 2.4rem;
+        text-decoration: none;
+      }
+
+      &__link:hover {
+        background-color: $color-font-grey-4;
+      }
+    }
+  }
+}

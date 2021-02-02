@@ -1,0 +1,73 @@
+// Fonts
+$font-display-primary: "Poppins", sans-serif;
+$font-display-secondary: "Heebo", sans-serif;
+
+// Colors
+$color-font-grey-1: #333333;
+$color-font-grey-2: #4f4f4f;
+$color-font-grey-3: #828282;
+$color-font-grey-4: #f2f2f2;
+$color-font-grey-5: #bdbdbd;
+
+$color-background-purple: #100e1d;
+
+$color-white: #fff;
+$color-blue: #2d9cdb;
+$color-green: #27ae60;
+$color-red: #eb5757;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  color: $color-font-grey-1;
+  font-family: $font-display-primary;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+// MEDIA QUERIES
+$bp-largest: 93.75em; // 1500px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 43.75em; // 700px
+$bp-smallest: 25em; // 400px
+
+@media only screen and (max-width: $bp-largest) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: $bp-large) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  html {
+    font-size: 40%;
+  }
+}

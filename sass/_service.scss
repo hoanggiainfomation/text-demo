@@ -1,0 +1,117 @@
+.services {
+  &__heading {
+    font-family: $font-display-primary;
+    font-weight: 500;
+    font-size: 2.6rem;
+    width: 19%;
+    margin: 1rem 0 1rem 18rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        margin-left: 2rem;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-list {
+    display: grid;
+    width: 70%;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        margin-left: 2rem;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+      }
+    }
+
+    .card {
+      margin-top: 8rem;
+      font-family: $font-display-primary;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+
+        .btn--card {
+          background-color: $color-blue;
+          color: $color-white;
+          box-shadow: 1px 1px 5px #000;
+        }
+      }
+
+      .material-icons.card__icon {
+        font-size: 2.7rem;
+        width: 5rem;
+        height: 5rem;
+        margin: 1rem 1rem 3.5rem 1rem;
+        display: flex;
+        color: $color-white;
+        border-radius: 1.6rem;
+        justify-content: center;
+        align-items: center;
+
+        &--1 {
+          background-color: $color-blue;
+        }
+
+        &--2 {
+          background-color: $color-green;
+        }
+
+        &--3 {
+          background-color: $color-red;
+        }
+      }
+
+      &__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $color-font-grey-1;
+        margin: 1rem 1rem 2.5rem 1rem;
+      }
+
+      &__text {
+        margin: 1rem 1rem 3.5rem 1rem;
+        height: 10rem;
+        width: 27rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+
+      .btn--card {
+        margin: 1rem 1rem 3.5rem 1rem;
+        width: 10rem;
+        height: 4rem;
+        border-radius: 1.2rem;
+        background-color: #e0e0e0;
+        color: $color-font-grey-3;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 15rem;
+        }
+
+        &:focus {
+          border: 1px solid #eee;
+          background-color: $color-blue;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
